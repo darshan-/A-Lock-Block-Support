@@ -1,0 +1,38 @@
+<h1>Frequently Asked Questions</h1>
+
+If you have a question or a problem, please look over the titles of
+the questions here to see if it has already been addressed.  If not,
+please email me or open an issue.
+
+== Why did you pull this functionality out of BatteryBot Pro? ==
+
+The functionality never belonged in a battery app to begin with.  I
+originally added it because I wanted to automatically have my lock
+screen disabled while my device was plugged in and on my desk.  I
+figured, "Hey my battery app already knows then the device is plugged
+in or out, and it already had a background Service running at all
+times; why don't I just add it to that?"
+
+I regretted it many times over the years, since it doesn't fit in as
+part of a battery app.  And I often wanted to improve the
+lock-blocking functionality in ways that would be very difficult as
+part of BatteryBot Pro.  But what finally pushed me over the edge was
+wanting to use the space taken by the "Disable Lockscreen" button in
+BatteryBot Pro for other, actually battery-related things.  I
+conducted a poll on the BatteryBot Google Plus community, and the vast
+majority of users either never used the lock-blocking functionality or
+didn't mind it being pulled out into another app.
+
+== Why is the app open source?  It's weird to have a paid app be open source. ==
+
+For the same reason BatteryBot and Noteworthy Tuner are: I think open
+source is great for the world and should be the default decision:
+software should be open source unless there is a compelling reason to
+keep the source closed.  All of my existing apps are open source, but
+I do have one forthcoming that will remain closed.
+
+I'm certain that I lose sales over this decision, but I hope that this
+is at least partially offset by additional sales by people who
+appreciate the decision to share my code.  I strongly believe in
+giving back to the community, and I'm confident that I offer my
+customers greater value with most of my apps being open source.
