@@ -11,7 +11,8 @@ originally added it because I wanted to automatically have my lock
 screen disabled while my device was plugged in and on my desk.  I
 figured, "Hey my battery app already knows when the device is plugged
 in or out, and it already has a background Service running at all
-times; why don't I just add it to that?"
+times; why don't I just add it to that?"  (Note: A Lock Block only
+runs a background Service when actively blocking the lock screen.)
 
 I regretted it many times over the years, since it doesn't fit in as
 part of a battery app.  And I often wanted to improve the
