@@ -10,7 +10,7 @@ The functionality never belonged in a battery app to begin with.  I
 originally added it because I wanted to automatically have my lock
 screen disabled while my device was plugged in and on my desk.  I
 figured, "Hey my battery app already knows when the device is plugged
-in or out, and it already had a background Service running at all
+in or out, and it already has a background Service running at all
 times; why don't I just add it to that?"
 
 I regretted it many times over the years, since it doesn't fit in as
