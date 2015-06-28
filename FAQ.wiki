@@ -60,7 +60,7 @@ properly; when I say immediately, I mean <i>immediately</i>: https://github.com/
 
 <b>DISABLE_KEYGUARD ("disable keylock")</b>
 
-This is for the optional lock screen functionality.
+This is for the disable lock screen functionality ("keyguard" means lock screen).
 
 <b>RECEIVE_BOOT_COMPLETED ("automatically start at boot")</b>
 
