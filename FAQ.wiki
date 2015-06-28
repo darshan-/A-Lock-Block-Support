@@ -37,3 +37,32 @@ is at least partially offset by additional sales by people who
 appreciate the decision to share my code.  I strongly believe in
 giving back to the community, and I'm confident that I offer my
 customers greater value with most of my apps being open source.
+
+== Why does the app ask for the permissions that it does? ==
+
+That's a very good question, one that I think every developer should
+explicitly address. One thing to keep in mind is that permissions are
+all-or-nothing and happen at install time: if some optional feature
+requires a permission in order to work, I need the app to request it
+at install time.  By explaining here exactly why the app requests its
+permissions and how it uses them, and of course by sharing the source
+code publicly, I hope to make it an easy decision to grant the
+permissions and install the app.
+
+<b>WAKE_LOCK ("prevent phone from sleeping")</b>
+
+This is necessary for the lock screen functionality to work properly.
+It won't be used at all if you don't have the app set to automatically
+disable and reenable the lock screen. If you do have that turned on,
+then the wake lock is released immediately after acquisition. It's
+just a work-around to make sure the the lock screen is reenabled
+properly; when I say immediately, I mean <i>immediately</i>: https://github.com/darshan-/alockblock/blob/83b973f4c786116dc103abfadeb19c174cb51de4/src/com/darshancomputing/alockblock/PlugInOutReceiver.java#L63
+
+<b>DISABLE_KEYGUARD ("disable keylock")</b>
+
+This is for the optional lock screen functionality.
+
+<b>RECEIVE_BOOT_COMPLETED ("automatically start at boot")</b>
+
+This is so the app can update the lock screen status after rebooting.
+
